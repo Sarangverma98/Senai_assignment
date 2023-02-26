@@ -1,0 +1,508 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto-Slab:400,500,700,300,100);
+
+body{
+    background-color: #b5d8ff;
+}
+
+.flex-Container{
+    height: 135vh;
+    width: 85vw;
+    background-image: url('bg.jpg');
+    margin: 90px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+.left{
+    width: 27vw;
+    height: 135vh;
+    
+}
+
+.leftDetails{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#addIcon{
+    font-size: 35px;
+    color: white;
+}
+
+#toggle{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+#temp{
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.place{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    color: white;
+}
+
+.day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: white;
+}
+
+#nearMe{
+    font-size: 15px;
+    padding: 5px;
+}
+
+#backArrow{
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+#forwardArrow{
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+
+#date{
+    margin-top: 6px;
+}
+
+#sunset{
+    padding-left: 30px;
+}
+
+#sun{
+    font-size: 20px;
+}
+
+.temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.leftBottom{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.leftBottom span{
+    font-size: 30px;
+}
+
+.right{
+    height: 135vh;
+    width: 67vw;
+    background-color: #e4f1ff;
+    border-radius: 50px;
+}
+
+
+.flex-Container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.flex-Container2 h3{
+    margin: 0;
+}
+
+#moreIcon{
+    font-size: 35px;
+    color: black;
+    margin-right: 15px;
+}
+
+.guide{
+    margin: 0 5px 2px 60px;
+}
+
+.weekWeather{
+    height: 40vh;
+    width: 50vw;
+    background-color: white;
+    margin: 60px 60px 40px 60px;
+    border-radius: 30px;
+}
+
+.weatherDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#sub{
+    text-align: center;
+  }
+
+ #explanation-table{
+    padding-right: 45px;
+    padding-left: 45px; 
+  }
+
+  .table-fill {
+    background: white;
+    border-collapse: collapse;
+    padding:5px;
+    width: 100%;
+  }
+
+  td {
+    padding: 10px 30px 0 30px;
+    text-align:left;
+    vertical-align:middle;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  th {
+    padding: 10px 30px 0 30px;
+    text-align:center;
+    vertical-align:middle;
+  }
+
+ #chart{
+    margin: 0 30px 0 70px;
+    height: 20vh;
+    width: 41vw;
+    padding-right: 100px;
+ } 
+
+.hours{
+    margin: 30px;
+}
+
+.sideNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.todayDetails{
+    margin: 0;
+}
+
+.flex-Container3{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.factors{
+    height: 21vh;
+    width: 16vw;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+#rightIcons{
+    color: white;
+    background-color: #5c9ce5;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.wind{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.precipitation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.uvIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.tempPrediction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+.rainChance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+#middleText{
+    text-align: center;
+}
+
+#myProgress5{
+    width: 80%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#rainBar{
+    width: 1%;
+    height: 8px;
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#rainChanceBar{
+    width: 1%;
+    height: 8px;
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+.humidityType{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+    padding-right: 22px;
+}
+
+.humidityProgress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px 0 20px;
+}
+
+#myProgress1{
+    width: 25%;
+    background-color: #dcdcdc;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#humidityBar1{
+    width: 100%;
+    height: 10px;
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#humidityBar2{
+    width: 100%;
+    height: 10px;
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+#humidityBar3{
+    width: 1%;
+    height: 10px;
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#uvRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 20px 0 20px;
+}
+
+#range{
+    font-size: 13px;
+}
+
+.uvProgressBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px 0 20px;
+}
+
+#uvProgress{
+    width: 16%;
+    background-color: #dcdcdc;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#uvBar1{
+    width: 100%;
+    height: 10px;
+    
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#uvBar2{
+    width: 60%;
+    height: 10px;
+    
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#preciRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 20px 0 20px;
+}
+
+#precipitationRange{
+    font-size: 12px;
+}
+
+.preciProgressBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px 0 20px;
+}
+
+#preciProgress{
+    width: 7%;
+    background-color: #dcdcdc;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#preciBar1{
+    width: 100%;
+    height: 10px;
+    
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#preciBar2{
+    width: 60%;
+    height: 10px;
+    
+    background-color: #5c9ce5;
+    border-radius: 10px;
+}
+
+#tempRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+
+#rainRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+#rainChance{
+    font-size: 14px;
+}
+
+.gauge {
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, #a22);
+    overflow: hidden;
+    margin-left: 20%;
+}
+.gauge:before{
+    content: "";
+    display: block;
+    padding-top: 50%;   /* ratio of 2:1*/
+}
+.gauge .chart {
+  overflow: hidden;
+}
+.gauge .mask {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  top: 40%;
+  background-color: #fff;
+  border-radius: 50%/100% 100% 0 0;
+}
+
+.gauge .percentage {
+    position:  absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #aaa);
+    transform:rotate(var(--rotation)); 
+    transform-origin: bottom center; 
+    transition-duration: 600;
+}
+.gauge:hover {
+  --rotation: 100deg;
+}
+.gauge .value {
+  position:absolute; bottom:0%; left:0;   
+  width:100%; 
+  text-align: center;
+}
+
+.gauge .min {
+  position:absolute; 
+  bottom:0; left:5%;   
+}
+.gauge .max {
+  position:absolute; 
+  bottom:0; right:5%;   
+ }
+

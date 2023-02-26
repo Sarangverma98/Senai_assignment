@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <base href="http://demos.telerik.com/kendo-ui/area-charts/date-axis">
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.621/styles/kendo.material.mobile.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+</head>
+<body>
+    <div class="flex-Container">
+        <div class="left">
+            <div class="leftDetails">
+                <div><span id="addIcon" class="material-icons">add_box</span></div>
+                <div><span id="addIcon" class="material-icons">more_horiz</span></div>
+                <div id="toggle" class="material-icons">&deg;Ctoggle_off&deg;F</div>
+            </div>
+            <div class="place">
+                <div class="location"><span id="nearMe" class="material-icons">near_me</span>New York, USA</div>
+                <div class="sunrise"><span id="sun" class="material-icons">wb_twilight</span>     07:19</div>
+            </div>
+            <div class = "day">
+                <div id="date">Today 28 Sept</div>
+                <div id="sunset"><span id="sun" class="material-icons">wb_twilight</span>     19:32</div>
+            </div>
+            <div class="temperature">
+                <div><span id="backArrow" class="material-icons">arrow_back_ios</span></div>
+                <div id="temp">27&deg;</div>
+                <div><span id="forwardArrow" class="material-icons">arrow_forward_ios</span></div>
+            </div>
+            <div class="leftBottom">
+                <div id="bottomSun" class="material-icons">wb_sunny</div> <span>Sunny</span>
+            </div>
+        </div>
+
+
+
+        <div class="right">
+
+
+            <div class="rightDetails">
+                <div class="flex-Container2">
+                    <div><h3>Welcome back Isabella</h3></div>
+                    <div><span id="moreIcon" class="material-icons">more_horiz</span> <img src="dp.jpg"></div>
+                </div>
+                <p class="guide">Check out today's weather information</p>
+            </div>
+
+
+            <div class="weekWeather">
+                <div class="weatherDetails">
+                    <div class="hours" style="font-size: 24px; font-weight: bold;">Upcoming hours</div>
+                    <div class="sideNav">
+                        <div>Rain Precipitation</div>
+                        <div>Next Days</div>
+                    </div>
+                </div>
+                <div id = "explanation-table">
+                    <table width="100%" border="0">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Now</th>
+                                <th scope="col">11:00</th>
+                                <th scope="col">12:00</th>
+                                <th scope="col">13:00</th>
+                                <th scope="col">14:00</th>
+                                <th scope="col">15:00</th>
+                                <th scope="col">16:00</th>
+                                <th scope="col">17:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="material-icons">wb_sunny</span></td>
+                                <td><span class="material-icons">wb_sunny</span></td>
+                                <td><span class="material-icons">cloud</span></td>
+                                <td><span class="material-icons">cloud</span></td>
+                                <td><span class="material-icons">wb_sunny</span></td>
+                                <td><span class="material-icons">cloud</span></td>
+                                <td><span class="material-icons">cloud</span></td>
+                                <td><span class="material-icons">wb_sunny</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="example">
+                    <div class="demo-section k-content wide">
+                        <div id="chart"></div>
+                    </div>
+                    
+                </div>
+            </div>    
+
+            <div class="todayDetails"><p class="guide" style="font-weight: bold; font-size: 24px;">More details of today's weather</p></div>
+
+            <div class="flex-Container3">
+                <div class="factors">
+                    <div class="humidity">
+                        <div style="font-weight: bold;">Humidity</div>
+                        <div><span id="rightIcons" class="material-icons">water_drop</div>
+                    </div>
+                    <div id="middleText"><span style="font-weight: bolder; font-size: 24px;">82% </span><span>bad</span></div>
+                    <div class="humidityType">
+                        <div>good</div>
+                        <div>normal</div>
+                        <div>bad</div>
+                    </div>
+                    <div class="humidityProgress">
+                        <div id="myProgress1"><div id="humidityBar1"></div></div>
+                        <div id="myProgress1"><div id="humidityBar2"></div></div>
+                        <div id="myProgress1"><div id="humidityBar3"></div></div>
+                    </div>
+                </div>
+                <div class="factors">
+                    <div class="wind">
+                        <div style="font-weight: bold;">Wind</div>
+                        <div><span id="rightIcons" class="material-icons">air</div>
+                    </div>
+                    <div class="gauge" style="width: 55%; --rotation:83deg; --color:#5c9ce5; --background:#dcdcdc;">
+                        <div class="percentage"></div>
+                        <div class="mask"></div>
+                        <span class="value" style="font-weight: bold; font-size: 20px;">8 km/h</span>
+                  </div>
+                </div>
+                <div class="factors">
+                    <div class="precipitation">
+                        <div style="font-weight: bold;">Precipitation</div>
+                        <div><span id="rightIcons" class="material-icons">bolt</div>
+                    </div>
+                    <div id="middleText"><span style="font-weight: bolder; font-size: 24px;">1.4cm </span></div>
+                    
+                    <div id="preciRange"></div>
+                    
+                    <div class="preciProgressBar" id="preciPBar">
+
+                    </div>
+                </div>
+                <div class="factors">
+                    <div class="uvIndex">
+                        <div style="font-weight: bold;">UV Index</div>
+                        <div><span id="rightIcons" class="material-icons">wb_sunny</div>
+                    </div>
+                    <div id="middleText"><span style="font-weight: bolder; font-size: 24px;">4 </span><span>medium</span></div>
+                    
+                    <div id="uvRange">
+                        
+                    </div>
+                    
+                    <div class="uvProgressBar" id="uvPBar">
+
+                    </div>
+                </div>
+                <div class="factors">
+                    <div class="tempPrediction">
+                        <div style="font-weight: bold;">Feels Like</div>
+                        <div><span id="rightIcons" class="material-icons">thermostat</div>
+                    </div>
+                    <div id="middleText"><span style="font-weight: bolder; font-size: 24px;">32&deg; </span></div>
+                    <div id="tempRange">
+                        <div>0&deg;</div>
+                        <div>25&deg;</div>
+                        <div>50&deg;</div>
+                    </div>
+                    <div id="myProgress5"><div id="rainBar"></div></div>
+                </div>
+                <div class="factors">
+                    <div class="rainChance">
+                        <div style="font-weight: bold;">Chance of Rain</div>
+                        <div><span id="rightIcons" class="material-icons">thunderstorm</div>
+                    </div>
+                    <div id="middleText"><span style="font-weight: bolder; font-size: 24px;">42% </span></div>
+                    <div id="rainRange"></div>
+                    <div id="myProgress5"><div id="rainChanceBar"></div></div>
+                </div>
+            
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var stats = [
+    { value: 23, order: "23" },
+    { value: 29, order: "29"},
+    { value: 58, order: "58"},
+    { value: 75, order: "75"},
+    { value: 33, order: "33" },
+    { value: 20, order: "20"},
+    { value: 73, order: "73"},
+    { valye: 49, order: "49" }
+];
+
+function createChart() {
+    $("#chart").kendoChart({
+          //title: { text: "Customer Journey Map"},
+          legend: {visible: false},
+        dataSource: {
+            data: stats
+        },
+        series: [{
+            type: "area",
+            aggregate: "avg",
+            field: "value",
+            categoryField: "order",
+              line: {style: "smooth"}
+          
+        }],
+        categoryAxis: {
+            baseUnit: "order"
+        },
+      valueAxis:{
+        majorGridLines: {visible: false},
+               visible: false
+      }
+
+    });
+}
+
+$(document).ready(createChart);
+$("#example").bind("kendo:skinChange", createChart);
+$(".box").bind("change", refresh);
+
+function refresh() {
+    var chart = $("#chart").data("kendoChart"),
+        series = chart.options.series,
+        categoryAxis = chart.options.categoryAxis,
+        baseUnitInputs = $("input:radio[name=baseUnit]"),
+        aggregateInputs = $("input:radio[name=aggregate]");
+
+    for (var i = 0, length = series.length; i < length; i++) {
+        series[i].aggregate = aggregateInputs.filter(":checked").val();
+    };
+
+    categoryAxis.baseUnit = baseUnitInputs.filter(":checked").val();
+
+    chart.refresh();
+}
+
+
+
+document.getElementById("rainBar").style.width = "70%"
+document.getElementById("rainChanceBar").style.width = "42%"
+document.getElementById("humidityBar3").style.width = "40%"
+
+var uvValue = ['0-2','3-5','6-7','8-10','11+'];
+let content = document.querySelector('#uvRange');
+
+for(var i=0; i<=4; i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "range";
+    newDiv.innerHTML = uvValue[i];
+    content.appendChild(newDiv);
+    
+}
+
+
+let progressContent = document.querySelector(".uvProgressBar");
+
+for(var i=0;i<=4;i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "uvProgress";
+    progressContent.appendChild(newDiv);
+    
+}
+
+
+var element = document.getElementById("uvPBar");
+var numberOfChildren = element.children.length;
+let barContent = document.querySelector("#uvProgress");
+
+for(var i=0;i<numberOfChildren;i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "uvBar"+[i+1];
+    element.children[i].appendChild(newDiv);
+
+}
+
+var preciValue = ['0','10','20','30','40','50','60','70','80','90'];
+let preciContent = document.querySelector("#preciRange");
+
+for(var i=0; i<=9; i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "precipitationRange";
+    newDiv.innerHTML = preciValue[i];
+    preciContent.appendChild(newDiv);
+    
+}
+
+
+let precipitationContent = document.querySelector(".preciProgressBar");
+
+for(var i=0;i<=9;i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "preciProgress";
+    precipitationContent.appendChild(newDiv);
+    
+}
+
+
+var element = document.getElementById("preciPBar");
+var numberOfChildren = element.children.length;
+let preciBarContent = document.querySelector("#preciProgress");
+
+for(var i=0;i<numberOfChildren;i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "preciBar"+[i+1];
+    element.children[i].appendChild(newDiv);
+
+}
+
+var rainValue = ['0%','25%','50%','75%','100%'];
+let rainContent = document.querySelector("#rainRange");
+
+for(var i=0; i<=4; i++){
+    var newDiv = document.createElement('div');
+    newDiv.id = "rainChance"
+    newDiv.innerHTML = rainValue[i];
+    rainContent.appendChild(newDiv);
+    
+}
+    </script>
+</body>
+</html>
